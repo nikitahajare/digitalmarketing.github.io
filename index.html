@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    
+.nav-link{
+width: 100px;
+}
+
+body {
+ font-family:Rubik,sans-serif;
+ position:relative;
+ font-weight:400;
+ font-size:15px
+}
+img{
+      margin-bottom: -20%;
+      /*text-align: right;*/
+      /*padding-right: 100px;*/
+      float: right;
+      }
+      .jumbotron{
+        background-color: #37517e;
+      }
+     .jumbotron h1{
+        padding-top: 10%;
+        font-family: "Nunito", sans-serif;
+        color: white;
+        font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+      }
+      .jumbotron p{
+        padding-top: 10%;
+        display: block;
+        text-align: justify;
+        font-family: "Nunito", sans-serif;
+        color: black;
+        display: block;
+        line-height: 30px;
+      }
+      
+      .services{
+        margin-top: -100px;
+        /*margin-bottom: 200px;*/
+      }
+      #middle3{
+        /*background-color:#E5E9FF;*/
+        padding-top: 80px;
+        background-color: white;
+
+      }
+      #visionptag{
+
+        font-size: 16px;
+        padding-top: 87px;
+        color: #000;
+      }
+      #visionimg{
+        
+        margin-bottom: 20px;
+      }
+      .services{
+        background-color: #6c757d;
+        /*height:500px;*/
+      }
+      #titledigital{
+        margin-top: -50px;
+        color: #343a40!important;
+        padding-right: 20px;
+        padding-top: 50px;
+      }
+      #ptag{
+        margin-top: -50px;
+      }
+      #service1p{
+        color: #252A2C;
+      }
+      
+      #f,#s,#t{
+        color: white;
+      }
+      /*------------------services1 css----------------------*/
+      .services1{
+        background-color: #e5e9ff !important;
+      }
+      .services1 h1,h2,p{
+        text-align: center;
+      }
+      .services1 strong{
+        margin-top: 50px;
+      }
+      .services1 p{
+        padding-top: 20px;
+        padding-bottom: 70px;
+        color:white;
+      }
+      .card #firstcard img{
+        text-align: center;
+      }
+      .warning {
+  border-color: white;
+  color: white;
+  margin-left: 92px;
+  border-radius: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.warning:hover {
+  /*background-color: #e5e9ff!important;*/
+  background-color:#f69323;
+  /*color: white;*/
+}
+
+.card #firstcard h3,p{
+  color:white;
+}
+.btn-outline-light:hover{
+  color:#252A2C;
+  background-color: #e5e9ff!important;
+  /*color: white;*/
+}
+      
+#carouselContent p{
+  size: 35px ;
+  word-spacing: 3px; 
+  margin-bottom: -10px;
+
+}
+
+ul {
+ padding:0;
+ margin:0
+}
+li {
+ list-style:none
+}
+a:focus,a:hover {
+ text-decoration:none;
+ -webkit-transition:.3s ease;
+ -o-transition:.3s ease;
+ transition:.3s ease
+}
+a:focus {
+ outline:0
+}
+img {
+ max-width:100%
+}
+p {
+ font-size:16px;
+ line-height:30px;
+ color:#898b96;
+ font-weight:300;
+}
+h4 {
+ font-family:Rubik,sans-serif;
+ margin:0;
+ font-weight:400;
+ padding:0;
+ color:#363940;
+}
+a {
+ color:#5867dd
+}
+.no-padding {
+ padding:0!important
+}
+/*.go_top {
+ line-height:40px;
+ cursor:pointer;
+ width:40px;
+ background:#5867dd;
+ color:#fff;
+ position:fixed;
+ -webkit-box-shadow:0 4px 4px rgba(0,0,0,.1);
+ box-shadow:0 4px 4px rgba(0,0,0,.1);
+ -webkit-border-radius:50%;
+ border-radius:50%;
+ right:-webkit-calc((100% - 1140px)/ 2);
+ right:calc((100% - 1140px)/ 2);
+ z-index:111;
+ bottom:80px;
+ text-align:center
+}*/
+
+/*.go_top span {
+ display:inline-block
+}*/
+.footer-big {
+ padding:105px 0 65px 0
+}
+.footer-big .footer-widget {
+ margin-bottom:40px
+}
+.footer--light {
+ background:#e7e8ed
+}
+.footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
+ color:#000000
+}
+.footer-menu {
+ padding-left:48px
+}
+.footer-menu ul li a {
+ font-size:15px;
+ line-height:32px;
+ -webkit-transition:.3s;
+ -o-transition:.3s;
+ transition:.3s
+}
+.footer-menu ul li a:hover {
+ color:#f69323
+}
+.footer-menu--1 {
+ width:100%
+}
+.footer-widget-title {
+ line-height:42px;
+ margin-bottom:10px;
+ font-size:18px
+}
+.mini-footer {
+ background:#192027;
+ text-align:center;
+ padding:0;
+}
+.mini-footer p {
+ margin:0;
+ line-height:26px;
+ font-size:15px;
+ color:#999;
+ padding-bottom: 30px;
+}
+.mini-footer p a {
+ color:#5867dd
+}
+.mini-footer p a:hover {
+ color:#34bfa3
+}
+.widget-about img {
+ display:block;
+ margin-bottom:30px
+}
+.widget-about p {
+ font-weight:400
+}
+/*.widget-about .contact-details {
+ margin:30px 0 0 0
+}*/
+.widget-about .contact-details li {
+ margin-bottom:10px
+}
+.widget-about .contact-details li:last-child {
+ margin-bottom:0
+}
+.widget-about .contact-details li span {
+ padding-right:12px
+}
+.widget-about .contact-details li a {
+ color:#5867dd
+}
+@media (max-width:991px) {
+ .footer-menu {
+  padding-left:0;
+  }
+}
+/*--------social media add------*/
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+  
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+/*.social-network a.iconInstagram:hover {
+  background-color: #3B5998;
+}*/
+/*.social-network a.iconGoogleplusg:hover {
+  background-color:#3B5998;
+}*/
+/*.social-network a.iconTwitter:hover {
+  background-color:#833ab4;
+}*/
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i{
+/*.social-network a.icoInstagram:hover i,*/
+/*.social-network a.icoGoogleplusg:hover i,*/
+/*.social-network a.icoTwitter:hover i*/
+
+  color: #fff;
+}
+
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+  </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="navbar">
+      <!-- bgcolor:#f8f9fa!important; -->
+
+  <!-- <a class="navbar-brand" href="#">Logo</a> -->
+  <!-- <span class="navbar-toggler-icon"></span> -->
+  </button>
+  <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
+    <!-- <p style="padding-top: 5px"><small>think digital</small></p> -->
+    <!-- <img src="images/w1.png" width="200" height="100" class="d-inline-block align-top" alt="" style="margin-top: -30px"> -->
+    </a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item" >
+      <a class="nav-link" href="index.html"><strong>Home</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
+    </li>
+  </ul>
+</nav>
+<!-- End nav bar -->
+<!-- ---------------------------------------Jumbotron------------------------------------------>
+
+  <div class="jumbotron jumbotron-fluid" style="padding-bottom: 200px;    margin-bottom: 10px;">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-6">
+    <h1 class="starttitle">Welcome to Digital <span style="color: #f69323">Marketing World</span></h1>      
+    <p style="color: white">Want MORE out of your online marketing? You’ve come to the right place. We’ve partnered with hundreds of small, medium, and enterprise businesses to get the results they want through comprehensive, cohesive digital marketing campaigns.</p>
+  </div>
+  <!-- <a href="#">
+        <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button>
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Explore</button>
+      </a> -->
+
+  <div class="col-md-6" >
+  <img src="images/hero-img2.png" style="padding-top: 35px;">
+  </div>
+</div>
+</div>
+<a href="#">
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button> -->
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;margin-top:30px;margin-bottom: -60px;">Read More</button>
+      </a>
+</div>
+
+
+<!-- -----------------------------------------------End Jumbotron----------------------------------- -->
+<!-------------------------------------------------- 3 parts---------------------------- -->
+<div class="services">
+<div class="container-fluid">
+  
+  <div class="row">
+      <div class="col-sm-2" style="background-color:white">
+      <!-- <div class="col-sm-2" style="background-color:yellow;">
+       -->
+      </div>
+    <div class="col-md-8" id="middle3" >
+    <h1 id="titledigital">Why We’re The Best <span style="color:#f69323">Digital Marketing Company</span></h1>
+            <!-- <p id="ptag">There is a sweet spot in digital marketing: the place where logic meets magic. achieve outcomes Outcomes that will not only help you perform, but outperform your own expectations, the competition, and the market. And grow your business successfully.</p>  -->
+      <div class="row">
+        <div class="col-md-6">
+          <p id="visionptag">We're a leading Digital Marketing company Headquartered in Pune, India. Achieving success for all clients is our primary aim, with an returning ratio of almost 90%, we are proud to claim ourselves as best resellers.
+          </p>
+          <!-- <p id="visionptag">We're a leading Digital Marketing company Headquartered in Pune, India. Achieving success for all clients is our primary aim, with an returning ratio of almost 90%, we are proud to claim ourselves as best resellers.
+          </p> -->
+        </div>
+      <div class="col-md-6">
+
+     <img src="images/visionnew2.png"  id="visionimg" alt="vision img">
+    </div>
+  </div></div>
+  <div class="col-sm-2" style="background-color:white">
+    <!-- <div class="col-md-2" style="background-color:yellow;"> -->
+      <!-- <img src="images/ads.png" alt="ads  image"> -->
+    </div>
+  </div>
+</div></div>
+<!-- ---------------------------------- End 3 parts--------------------------------------------------->
+
+
+
+
+<!-- ---------------------start services1-------------------------------------------- -->
+  <div class="services1">
+<div class="container" style="padding-top: 50px;">
+  
+  <!-- <div class="row"> -->
+    
+    <h1><strong>#1</strong></h1>
+    <br>
+    <h2> Digital Marketing <span style="color: #f69323"> Agency for All</span> </h2>
+    <p id=service1p>There is a sweet spot in digital marketing: the place where logic meets magic. achieve outcomes Outcomes that will not only help you perform, but outperform your own expectations, the competition, and the market. And grow your business successfully.</p>
+
+    <div class="card-deck">
+      <!-- -----------------------first service-------------- -->
+  <div class="card" id="firstcard" style="height:450px; margin-bottom: 60px;border-radius: 25px">
+    <div class="card-body" style="background-color: #478FFF">
+      
+      <div class="icon-block">
+              <div class="icon mb-20" >
+                <!-- style="width: 370px height:107px"> -->
+                <h3 class="text-white" style="text-align: center; padding-top: 20px;font-family: "Nunito", sans-serif;">Digital Marketing</h3>
+                <img src="images/ser1.png" alt="Icon" style="padding-right: 94px; padding-top: 30px; padding-bottom: 30px">
+                
+              </div>
+            </div>
+
+      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">Get in touch with us to get an extensive Digital Marketing interview or a free statement today!</p>
+      
+      <a href="#">
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center; background-color: transparent;
+    background-image: none; margin-left: 100px;">Read More</button>  -->
+    <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
+      </a>
+    </div>
+  </div>
+
+  
+<!-- --------------------------------End first service-------------------------------------------- -->
+
+<!-- start 2nd services------------------------------- -->
+  <div class="card" id="firstcard" style="height:450px; margin-bottom: 60px;border-radius: 25px">
+    <div class="card-body" style="background-color: #252A2C">
+      
+      <div class="icon-block">
+              <div class="icon mb-20">
+                <h3 class="text-white" style="text-align: center; padding-top: 20px;"> Web Development</h3>
+                <img src="images/ser2.png" alt="Icon" style="padding-right: 94px; padding-top: 30px; padding-bottom: 30px">
+                
+              </div>
+            </div>
+
+      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">We give out you with the best website plan that turns into a key to achievement of extraordinary arrangements and help </p>
+      
+      <a href="#">
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button> -->
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
+      </a>
+    </div>
+  </div>
+
+<!-- -----------------------end 2nd and start 3rd service------------------------------------- -->
+
+  <div class="card" id="firstcard" style="height:450px; margin-bottom: 60px;border-radius: 25px">
+    <div class="card-body" style="background-color: #1fb398!important;">
+      
+      <div class="icon-block">
+              <div class="icon mb-20">
+                <h3 class="text-white" style="text-align: center; padding-top: 20px;"> App Development</h3>
+                <img src="images/ser3.png" alt="Icon" style="padding-right: 94px; padding-top: 30px; padding-bottom: 30px">
+                
+              </div>
+            </div>
+
+      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">We are the award wining Android App Development Company, based in India, Noida, we PROMOZIE, offer a range</p>
+      
+      <a href="#">
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center; background-color: transparent;
+    background-image: none; margin-left: 100px;">Read More</button>  -->
+        <!-- <button class="btn warning" >Warning</button> -->
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
+      </a>
+    </div>
+  </div>
+
+</div>
+<a href="#">
+<button class="btn warning" style="margin-left:500px; margin-bottom:70px;background-color:#f69323;padding: 10px 30px 10px 30px;">All Services</button></a></div>
+
+
+<!-- -------------------------------end services----------------------------- -->
+
+<!-- ------------------------------------ Start happy clients---------------------------- -->
+<div class="container-fluid" style="background-color: #000;padding-bottom: 20px">
+  <h1 style="text-align: center;padding-top: 30px;color:white">Happy <span style="color: #f69323"> Clients</span></h1>
+    <div id="carouselContent" class="carousel slide" data-ride="carousel" style="margin-bottom: -50px">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active text-center p-4">
+                 <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px; 
+">Deliverables and reporting are on time. Support is excellent and executives are really humble and TAT received was just 1 hour. Would like to continue.</p>
+                 <h3 style="color:red">Mr. Ganesh</h3>
+                 <p>CEO (SourcecodeGuru)</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                
+                <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px;"> I want to say thank you to the SEO team who have done an excellent job ranking the Will and Probate Centre at the top of Google.</p>
+                 <h3 style="color:red">Mr. Rahul Jagtap</h3>
+                 <p>Marketing Manager (BrahmaCorp)</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                
+                <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px;"> Working with this company since last one year for all types of Digital campaigns and really praise them for good job which helped us sell properties worth millions.</p>
+                 <h3 style="color:red">Mr. Pushkar</h3>
+                 <p>Marketing Head (Phoenix Group)</p>
+            </div>
+            <div class="carousel-item text-center p-4">
+                
+                <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px;"> I want to say thank you to the SEO team who have done an excellent job ranking the Will and Probate Centre at the top of Google.</p>
+                 <h3 style="color:red">Mr. Rahul Jagtap</h3>
+                 <p>Marketing Manager (BrahmaCorp)</p>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+  <!------------------------------------- End happy client------------------------------------------>
+
+<!-- --------------------start footer--------------------- -->
+<footer class="footer-area footer--light" >
+  <div class="footer">
+    <!-- start .container -->
+    <div class="container" style="padding-top: 100px;">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-widget">
+            
+            <div class="widget-about" style="font-size: 25px;
+    padding-left: 0px;">
+              <span style="color: #f69323;padding-left: 20px;">Digital Innovate</span>
+              
+              <!-- <img src="http://placehold.it/250x80" alt="" class="img-fluid" style="margin-top: 20px"> -->
+
+              <p style="color: black">Digital Innovate Solutions is Pune's premier full-service digital marketing company.</p>
+              <!-- <ul class="contact-details">
+                <li>
+                  <span class="icon-earphones"></span> Call Us:
+                  <a href="tel:344-755-111">344-755-111</a>
+                </li>
+                <li>
+                  <span class="icon-envelope-open"></span>
+                  
+                </li>
+              </ul> -->
+            </div>
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- end /.col-md-4 -->
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+            <div class="footer-menu footer-menu--1">
+              <h4 class="footer-widget-title" >Quick Links</h4>
+              <ul>
+                
+                <li>
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="carousel.html">Gallary</a>
+                </li>
+                <li>
+                  <a href="cardsignup.html">Sign up</a>
+                </li>
+                <li>
+                  <a href="cardsignin.htm">Sign in</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end /.footer-menu -->
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- end /.col-md-3 -->
+
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+
+            <div class="footer-menu">
+              <h4 class="footer-widget-title">Our Services</h4>
+              <ul>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <a href="#">App Development</a>
+                </li>
+                <li>
+                  <a href="#">Digital Marketing</a>
+                </li>
+             
+                
+              </ul>
+            </div>
+            <!-- end /.footer-menu -->
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- end /.col-lg-3 -->
+
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+            <div class="footer-menu no-padding">
+              <h4 class="footer-widget-title" >Contact Us
+                <!-- Get connected with us on social networks! -->
+              </h4>
+              <!-- <ul> Help Support-->
+                <small><span>Mon-sat 9.30am-6.30pm</span></small>
+                <p style="padding-bottom: 0px;
+    padding-top: 0px;padding-right: 110px; color:black">+917744088287</p>
+                <small><span>online support</span></small>
+                    <p style="padding-bottom: 0px;
+    padding-top: 0px;padding-right: 110px;"><a href="mailto:info@digitalinnovate.com">info@digitalinnovate.com</a></p>
+                <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <!-- <li><a href="#" class="icoInstagram" title="Linkedin"><i class="fa fa-instagram"></i></a></li> -->
+            <!--  <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li> -->
+             <!-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
+             <!-- <li><a href="#" class="icoGoogleplusg" title="Googleplusg"><i class="fa fa-google-plus-g"></i></a></li> -->
+
+             
+            </ul>       
+                
+            </div>
+            <!-- end /.footer-menu -->
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- Ends: .col-lg-3 -->
+
+      </div>
+      <!-- end /.row -->
+    </div>
+    <!-- end /.container -->
+  </div>
+  <!-- end /.footer-big -->
+
+  <div class="mini-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>Copyrights © 2020 All Rights Reserved by 
+              <a href="#">Digital Innovate Solutions.</a> 
+              
+            </p>
+          </div>
+
+          <!-- <div class="go_top">
+            <span class="icon-arrow-up"></span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ----------------end footer -->
+</body>
+</html>
