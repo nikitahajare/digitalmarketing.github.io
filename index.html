@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Digital Innovate</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -28,7 +28,7 @@ img{
       float: right;
       }
       .jumbotron{
-        background-color: #37517e;
+        background-color: #7F38EC;
       }
      .jumbotron h1{
         padding-top: 10%;
@@ -387,16 +387,16 @@ ul.social-network li {
     <!-- <img src="images/w1.png" width="200" height="100" class="d-inline-block align-top" alt="" style="margin-top: -30px"> -->
     </a>
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item" >
+    <li class="nav-item" title="Home Page">
       <a class="nav-link" href="index.html"><strong>Home</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Gallary">
       <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Click Here for Sign Up">
       <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Click Here for Sign In">
       <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
     </li>
   </ul>
@@ -404,29 +404,46 @@ ul.social-network li {
 <!-- End nav bar -->
 <!-- ---------------------------------------Jumbotron------------------------------------------>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "Black")
+      .slideUp(2000)
+      .slideDown(2000);
+  });
+});
+</script>
+</head>
+<body>
+
   <div class="jumbotron jumbotron-fluid" style="padding-bottom: 200px;    margin-bottom: 10px;">
   <div class="container">
   <div class="row">
   <div class="col-md-6">
     <h1 class="starttitle">Welcome to Digital <span style="color: #f69323">Marketing World</span></h1>      
-    <p style="color: white">Want MORE out of your online marketing? You’ve come to the right place. We’ve partnered with hundreds of small, medium, and enterprise businesses to get the results they want through comprehensive, cohesive digital marketing campaigns.</p>
+    <p id="p1" style="color: white"><b> Want MORE out of your online marketing? You’ve come to the right place. We’ve partnered with hundreds of small, medium, and enterprise businesses to get the results they want through comprehensive, cohesive digital marketing campaigns.</b></p>
   </div>
   <!-- <a href="#">
-        <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button>
+        <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">See Magic</button>
         <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Explore</button>
       </a> -->
-
+<style>
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+</style>
   <div class="col-md-6" >
   <img src="images/hero-img2.png" style="padding-top: 35px;">
   </div>
 </div>
 </div>
 <a href="#">
-        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button> -->
-        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;margin-top:30px;margin-bottom: -60px;">Read More</button>
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;"> See Magic </button> -->
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;margin-top:30px;margin-bottom: -60px;">See Magic</button>
       </a>
 </div>
-
 
 <!-- -----------------------------------------------End Jumbotron----------------------------------- -->
 <!-------------------------------------------------- 3 parts---------------------------- -->
@@ -465,18 +482,29 @@ ul.social-network li {
 
 
 <!-- ---------------------start services1-------------------------------------------- -->
-  <div class="services1">
+  
+<div class="services1">
 <div class="container" style="padding-top: 50px;">
   
   <!-- <div class="row"> -->
     
     <h1><strong>#1</strong></h1>
     <br>
-    <h2> Digital Marketing <span style="color: #f69323"> Agency for All</span> </h2>
-    <p id=service1p>There is a sweet spot in digital marketing: the place where logic meets magic. achieve outcomes Outcomes that will not only help you perform, but outperform your own expectations, the competition, and the market. And grow your business successfully.</p>
-
+    <h2> Digital Marketing <span style="color: #f69323"> Agency for All</span> </h2><br>
+<script>
+$(document).ready(function(){
+  $("p5").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+ 
+<p5 ><b>There is a sweet spot in digital marketing: the place where logic meets magic. achieve outcomes Outcomes that will not only help you perform, but outperform your own expectations, the competition, and the market. And grow your business successfully.</p5>
+</b><br><br><br>
     <div class="card-deck">
       <!-- -----------------------first service-------------- -->
+
+
   <div class="card" id="firstcard" style="height:450px; margin-bottom: 60px;border-radius: 25px">
     <div class="card-body" style="background-color: #478FFF">
       
@@ -489,17 +517,13 @@ ul.social-network li {
               </div>
             </div>
 
-      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">Get in touch with us to get an extensive Digital Marketing interview or a free statement today!</p>
+<p class="card-text" style="padding-top: 180px; padding-bottom: 20px">Get in touch with us to get an extensive Digital Marketing interview or a free statement today!</p>
       
-      <a href="#">
-        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center; background-color: transparent;
-    background-image: none; margin-left: 100px;">Read More</button>  -->
-    <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
+ <a href="#"> <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">See Magic</button> -->
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">See Magic</button>
       </a>
     </div>
   </div>
-
-  
 <!-- --------------------------------End first service-------------------------------------------- -->
 
 <!-- start 2nd services------------------------------- -->
@@ -517,8 +541,8 @@ ul.social-network li {
       <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">We give out you with the best website plan that turns into a key to achievement of extraordinary arrangements and help </p>
       
       <a href="#">
-        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button> -->
-        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">See Magic</button> -->
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">See Magic</button>
       </a>
     </div>
   </div>
@@ -540,14 +564,15 @@ ul.social-network li {
       
       <a href="#">
         <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center; background-color: transparent;
-    background-image: none; margin-left: 100px;">Read More</button>  -->
+    background-image: none; margin-left: 100px;">See Magic</button>  -->
         <!-- <button class="btn warning" >Warning</button> -->
-        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
+        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">See Magic</button>
       </a>
     </div>
   </div>
 
 </div>
+
 <div class="allservices">
 <a href="#">
 <button class="btn warning" style="margin-left:400px; margin-bottom:70px;background-color:#f69323;padding: 10px 30px 10px 30px;">All Services</button></a></div>
@@ -637,16 +662,16 @@ ul.social-network li {
               <ul>
                 
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="index.html" title="Go to Home Page">Home</a>
                 </li>
                 <li>
-                  <a href="carousel.html">Gallary</a>
+                  <a href="carousel.html" title="Go to Gallary Page">Gallary</a>
                 </li>
                 <li>
-                  <a href="cardsignup.html">Sign up</a>
+                  <a href="cardsignup.html" title="Go to Signup Page">Sign up</a>
                 </li>
                 <li>
-                  <a href="cardsignin.htm">Sign in</a>
+                  <a href="cardsignin.htm" title="Go to Login Page">Sign in</a>
                 </li>
               </ul>
             </div>
