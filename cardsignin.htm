@@ -8,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <style>
   	img{
 		 width: 100%;
@@ -78,17 +79,16 @@ body {
   <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
     <!-- <img src="images/w1.png" width="200" height="100" class="d-inline-block align-top" alt="" style="margin-top: -30px"> -->
     </a>
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item" style="w">
+  <ul class="navbar-nav ml-auto"> <li class="nav-item" title="Home Page">
       <a class="nav-link" href="index.html"><strong>Home</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Gallary">
       <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Click Here for Sign Up">
       <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Click Here for Sign In">
       <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
     </li>
   </ul>
@@ -104,13 +104,14 @@ body {
     			 <!-- <div class="center">Sign In</div> -->
     			<div class="card-body">
     				<form >
-              			<div class="form-group">
+              						
+					<div class="form-group" title="Enter Valid Email ID">
                 			<label for="exampleInputEmail1">Email address</label>
-                				<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" required="">
-                        <div class="invalid-feedback">Sorry, you missed this one.</div>
+					<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" required="">
+                       		  	<div class="invalid-feedback">Sorry, you missed this one.</div>
                				 
               			</div>
-              			<div class="form-group">
+              			<div class="form-group" title="Enter at least 8 Digit Password">
                				 <label for="exampleInputPassword1">Password</label>
                				 <input type="password" class="form-control" placeholder="Password" required="">
               			</div>
@@ -118,21 +119,21 @@ body {
                 			<input type="checkbox" class="form-check-input"  id="exampleCheck1">
                 			<label class="form-check-label" for="exampleCheck1">Remember me</label>
               			
-                    
+ 
                       <a href="#" class="pull-right txt1">
                             
-                            <a href="#" class="pull-right forgotpass">Forgot Password? </a>
+                            <a href="#" class="pull-right forgotpass" title="If You Forget Password Click Here">Forgot Password? </a> <br />
                       </a>
                      </div>
-                   
+               
 
                       <div class="text-center">
-                      <button class="btn btn-success loginbtn"  type="button" >Log in</button>
+                      <button class="btn btn-success loginbtn"  type="button" title="Login">Log in</button>
                       <!-- <button type="button" class="btn btn-success">Login</button> -->
               			 </div>
                      <a href="#" class="pull-center txt1" >
-                            
-              <a href="cardsignup.html" class="pull-center "    style=" padding: 0px 45px 0px 80px;">Create an account? </a>
+                          
+              <a href="cardsignup.html" class="pull-center " title="If You Dont Have Account Click Here" style=" padding: 0px 45px 0px 80px;">Create an account? </a>
                       </a>
             		</form>
     			</div>

@@ -81,16 +81,16 @@ body {
     <!-- <img src="images/w1.png" width="200" height="100" class="d-inline-block align-top" alt="" style="margin-top: -30px"> -->
     </a>
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item" style="w">
+     <li class="nav-item" title="Home Page">
       <a class="nav-link" href="index.html"><strong>Home</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Gallary">
       <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Click Here for Sign Up">
       <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item" title="Click Here for Sign In">
       <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
     </li>
   </ul>
@@ -106,18 +106,29 @@ body {
     			 <!-- <div class="center">Sign In</div> -->
     			<div class="card-body">
     				<form >
-              			
+              			<script>
+				function myFunction() {
+			    	var x = document.getElementById("fname");
+  				x.value = x.value.toUpperCase();
+				}
+				</script>
                     <div class="form-group">
                     <div class="row align-items-center mt-4"  >
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First Name">
+            <div class="col" title="Enter First Name">
+              <input type="text" id="fname" onkeyup="myFunction()" class="form-control" placeholder="First Name">
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last Name">
+				<script>
+				function myFunction1() {
+			    	var x = document.getElementById("dname");
+  				x.value = x.value.toUpperCase();
+				}
+				</script>
+            <div class="col" title="Enter Last Name">
+              <input type="text" id="dname" onkeyup="myFunction1()" class="form-control" placeholder="Last Name">
             </div>
           </div>
         </div>
-          <div class="form-group">
+          <div class="form-group" title="Enter Valid Email Address">
                       <!-- <label for="exampleInputEmail1">Email address</label> -->
                         <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" required="">
                         
@@ -125,23 +136,23 @@ body {
                     </div>
                     <div class="form-group">
         <div class="row align-items-center mt-4">
-            <div class="col">
+            <div class="col" title="Enter at Least 8 Digit Password">
               <input type="password" class="form-control" placeholder="Password">
             </div>
-            <div class="col">
+            <div class="col" title="Re-Enter Password">
               <input type="password" class="form-control" placeholder="Confirm Password">
             </div>
           </div>
         </div>
         <div class="form-group">
       <div class="row align-items-center mt-4">
-            <div class="col">
+            <div class="col" title="Enter Mobile Number">
               <input type="number" class="form-control" placeholder="Mobile Number">
             </div>
           
-            <div class="col">
+            <div class="col" title="Choose State">
               <!-- <input type="text" class="form-control" placeholder="State"> -->
-              <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Choose State">
           Choose State
           </a>
 
@@ -164,12 +175,12 @@ body {
                     
                       <a href="#" class="pull-right txt1">
                             
-                            <a href="cardsignin.htm" class="pull-right loginlink"><strong>Log in </strong></a>
+                            <a href="cardsignin.htm" class="pull-right loginlink" title="Go to Login Page"><strong>Log in </strong></a>
                       </a>
                      </div>
                    
 
-                      <div class="text-center">
+                      <div class="text-center" title="Sign Up">
                       <button class="btn btn-success signupbtn"  type="button">Sign Up</button>
                       <!-- <button type="button" class="btn btn-success">Login</button> -->
               			 </div>
