@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -17,6 +18,7 @@
   .nav-link{
 width: 100px;
 }
+
 
 
 body {
@@ -32,7 +34,7 @@ body {
 }*/
 	.card{
 	position: absolute;
-	margin-top: 50%;
+	margin-top: 25%;
   /*padding-right: 20px;*/
 	}
 	.card-header{
@@ -62,8 +64,6 @@ body {
   .loginlink{
    padding: 0px 100px 0px;
 }
-     
-  
 
 
   	
@@ -71,29 +71,30 @@ body {
   
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="navbar">
-      <!-- bgcolor:#f8f9fa!important; -->
-
-  <!-- <a class="navbar-brand" href="#">Logo</a> -->
-  <!-- <span class="navbar-toggler-icon"></span> -->
-  </button>
-  <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
-    <!-- <img src="images/w1.png" width="200" height="100" class="d-inline-block align-top" alt="" style="margin-top: -30px"> -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
+    
     </a>
-  <ul class="navbar-nav ml-auto">
-     <li class="nav-item" title="Home Page">
-      <a class="nav-link" href="index.html"><strong>Home</strong></a>
-    </li>
-    <li class="nav-item" title="Gallary">
-      <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
-    </li>
-    <li class="nav-item" title="Click Here for Sign Up">
-      <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
-    </li>
-    <li class="nav-item" title="Click Here for Sign In">
-      <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
-    </li>
-  </ul>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <a href="#" class="nav-item nav-link">Services</a>
+                <a href="#" class="nav-item nav-link">About</a>
+                <a href="#" class="nav-item nav-link">Contact</a>
+            </div> -->
+            <div class="navbar-nav ml-auto">
+               <a class="nav-link" href="index.html" title="Go to Home Page"><strong>Home</strong></a>
+               <a class="nav-link" href="carousel.html" title="See our Gallary"><strong>Gallary</strong></a>
+               <a class="nav-link" href="cardsignup.html" title="Click here to Create New Account"><strong>Sign up</strong></a>
+               <a class="nav-link" href="cardsignin.htm" title="Click here to Login"><strong>Sign in</strong></a>
+                
+            </div>
+        </div>
+    </div>    
 </nav>
 <!-- End nav bar -->
 	<div class="container">
@@ -102,7 +103,7 @@ body {
     		 <div class="col-md-3" > 
     			<div class="card" style="width:500px">
     			<!-- <div class="card-header">Sign in to continue</div> -->
-    			<img class="card-img-top" src="images/signup.png" alt="Card image" style="width:100%">
+    			<img class="card-img-top" src="images/signup.PNG" alt="Card image" style="width:100%">
     			 <!-- <div class="center">Sign In</div> -->
     			<div class="card-body">
     				<form >
@@ -150,9 +151,9 @@ body {
               <input type="number" class="form-control" placeholder="Mobile Number">
             </div>
           
-            <div class="col" title="Choose State">
+            <div class="col">
               <!-- <input type="text" class="form-control" placeholder="State"> -->
-              <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Choose State">
+              <a class="btn btn-light dropdown-toggle" title="Select State"href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Choose State">
           Choose State
           </a>
 
@@ -168,7 +169,7 @@ body {
           </div>
         </div>
               			
-              				<div class="form-group form-check">
+              				<div class="form-group form-check" title="Check here to Save Password">
                 			<input type="checkbox" class="form-check-input"  id="exampleCheck1">
                 			<label class="form-check-label" for="exampleCheck1">Remember me</label>
               			
@@ -191,11 +192,8 @@ body {
     		<div class="col-sm-3" ></div>
     		<!-- <div class="col-sm-3">.col-sm-3</div> -->
   
-    		
-
     	</div>
 	</div>
-
 
 
 </body>
