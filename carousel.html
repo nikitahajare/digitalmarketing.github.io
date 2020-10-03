@@ -4,7 +4,9 @@
 	<title></title>
 	 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -24,37 +26,252 @@ body {
  font-weight:400;
  font-size:15px
 }
+/*---------footer----*/
+ul {
+ padding:0;
+ margin:0
+}
+li {
+ list-style:none
+}
+a:focus,a:hover {
+ text-decoration:none;
+ -webkit-transition:.3s ease;
+ -o-transition:.3s ease;
+ transition:.3s ease
+}
+a:focus {
+ outline:0
+}
+img {
+ max-width:100%
+}
+p {
+ font-size:16px;
+ line-height:30px;
+ color:#898b96;
+ font-weight:300;
+}
+h4 {
+ font-family:Rubik,sans-serif;
+ margin:0;
+ font-weight:400;
+ padding:0;
+ color:#363940;
+}
+a {
+ color:#5867dd
+}
+.no-padding {
+ padding:0!important
+}
+#footer{
+  padding-bottom: 30px;
+}
+/*.go_top span {
+ display:inline-block
+}*/
+.footer-big {
+ padding:105px 0 65px 0
+}
+.footer-big .footer-widget {
+ margin-bottom:40px
+}
+.footer--light {
+ background:#e7e8ed
+}
+.footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
+ color:#000000
+}
+.footer-menu {
+ padding-left:48px
+}
+.footer-menu ul li a {
+ font-size:15px;
+ line-height:32px;
+ -webkit-transition:.3s;
+ -o-transition:.3s;
+ transition:.3s
+}
+.footer-menu ul li a:hover {
+ color:#f69323
+}
+.footer-menu--1 {
+ width:100%
+}
+.footer-widget-title {
+ line-height:42px;
+ margin-bottom:10px;
+ font-size:18px
+}
+.mini-footer {
+ background:#192027;
+ text-align:center;
+ padding:0;
+ padding-top: 30px;
+}
+.mini-footer p {
+ margin:0;
+ line-height:26px;
+ font-size:15px;
+ color:#999;
+ padding-bottom: 30px;
+}
+.mini-footer p a {
+ color:#5867dd
+}
+.mini-footer p a:hover {
+ color:#34bfa3
+}
+.widget-about img {
+ display:block;
+ margin-bottom:30px
+}
+.widget-about p {
+ font-weight:400
+}
+/*.widget-about .contact-details {
+ margin:30px 0 0 0
+}*/
+.widget-about .contact-details li {
+ margin-bottom:10px
+}
+.widget-about .contact-details li:last-child {
+ margin-bottom:0
+}
+.widget-about .contact-details li span {
+ padding-right:12px
+}
+.widget-about .contact-details li a {
+ color:#5867dd
+}
+@media (max-width:991px) {
+ .footer-menu {
+  padding-left:0;
+  }
+}
+/*--------social media add------*/
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+  
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+/*.social-network a.iconInstagram:hover {
+  background-color: #3B5998;
+}*/
+/*.social-network a.iconGoogleplusg:hover {
+  background-color:#3B5998;
+}*/
+/*.social-network a.iconTwitter:hover {
+  background-color:#833ab4;
+}*/
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i{
+/*.social-network a.icoInstagram:hover i,*/
+/*.social-network a.icoGoogleplusg:hover i,*/
+/*.social-network a.icoTwitter:hover i*/
+
+  color: #fff;
+}
+
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
   </style>
   
 </head>
 <body>
 <!-- ------------------------------------------Navbar --------------------------------------->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="navbar">
-      <!-- bgcolor:#f8f9fa!important; -->
-
-  <!-- <a class="navbar-brand" href="#">Logo</a> -->
-  <!-- <span class="navbar-toggler-icon"></span> -->
-  </button>
-  <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
-    <!-- <img src="images/w1.png" width="200" height="100" class="d-inline-block align-top" alt="" style="margin-top: -30px"> -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
+    
     </a>
-  <ul class="navbar-nav ml-auto"> <li class="nav-item" title="Home Page">
-      <a class="nav-link" href="index.html"><strong>Home</strong></a>
-    </li>
-    <li class="nav-item" title="Gallary">
-      <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
-    </li>
-    <li class="nav-item" title="Click Here for Sign Up">
-      <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
-    </li>
-    <li class="nav-item" title="Click Here for Sign In">
-      <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
-    </li>
-  </ul>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          
+            <div class="navbar-nav ml-auto">
+               <a class="nav-link" href="index.html" title="Go to Home Page"><strong>Home</strong></a>
+               <a class="nav-link" href="carousel.html" title="See our Gallary"><strong>Gallary</strong></a>
+               <a class="nav-link" href="cardsignup.html" title="Click here to Create New Account"><strong>Sign up</strong></a>
+               <a class="nav-link" href="cardsignin.htm" title="Click here to Login"><strong>Sign in</strong></a>
+                
+            </div>
+        </div>
+    </div>    
 </nav>
 <!-- ----------------------------------------End Navbar----------------------------------------------- -->
 <!-- -----------------------------------------carousel----------------------------------------- -->
-<div class="container">
+<div class="container" style="margin-top: -16px;"> 
 
 <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -93,6 +310,146 @@ body {
   </a>
 </div>
 </div>
+<!-- ------footer--------------- -->
+<footer class="footer-area footer--light" >
+  <div class="footer" id="footer">
+    <!-- start .container -->
+    <div class="container" style="padding-top: 100px;">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="footer-widget">
+            
+            <div class="widget-about" style="font-size: 25px;
+    padding-left: 0px;">
+              <span style="color: #f69323;padding-left: 20px;">Digital Innovate</span>
+              
+              <!-- <img src="http://placehold.it/250x80" alt="" class="img-fluid" style="margin-top: 20px"> -->
+
+              <p style="color: black">Digital Innovate Solutions is Pune's premier full-service digital marketing company.</p>
+              <!-- <ul class="contact-details">
+                <li>
+                  <span class="icon-earphones"></span> Call Us:
+                  <a href="tel:344-755-111">344-755-111</a>
+                </li>
+                <li>
+                  <span class="icon-envelope-open"></span>
+                  
+                </li>
+              </ul> -->
+            </div>
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- end /.col-md-4 -->
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+            <div class="footer-menu footer-menu--1">
+              <h4 class="footer-widget-title" >Quick Links</h4>
+              <ul>
+                
+                <li>
+                  <a href="index.html" title="Go to Home Page">Home</a>
+                </li>
+                <li>
+                  <a href="carousel.html" title="See our Gallary">Gallary</a>
+                </li>
+                <li>
+                  <a href="cardsignup.html" title="Create New Account">Sign up</a>
+                </li>
+                <li>
+                  <a href="cardsignin.htm" title="Login">Sign in</a>
+                </li>
+              </ul>
+            </div>
+            <!-- end /.footer-menu -->
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- end /.col-md-3 -->
+
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+
+            <div class="footer-menu">
+              <h4 class="footer-widget-title">Our Services</h4>
+              <ul>
+                <li>
+                  <a href="#">Web Development</a>
+                </li>
+                <li>
+                  <a href="#">App Development</a>
+                </li>
+                <li>
+                  <a href="#">Digital Marketing</a>
+                </li>
+             
+                
+              </ul>
+            </div>
+            <!-- end /.footer-menu -->
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- end /.col-lg-3 -->
+
+        <div class="col-md-3 col-sm-4">
+          <div class="footer-widget">
+            <div class="footer-menu no-padding">
+              <h4 class="footer-widget-title" >Contact Us
+                <!-- Get connected with us on social networks! -->
+              </h4>
+              <!-- <ul> Help Support-->
+                <small><span>Mon-sat 9.30am-6.30pm</span></small>
+                <p style="padding-bottom: 0px;
+    padding-top: 0px;padding-right: 110px; color:black">+917744088287</p>
+                <small><span>online support</span></small>
+                    <p style="padding-bottom: 0px;
+    padding-top: 0px;padding-right: 110px;"><a href="mailto:info@digitalinnovate.com">info@digitalinnovate.com</a></p>
+                <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+             <!-- <li><a href="#" class="icoInstagram" title="Linkedin"><i class="fa fa-instagram"></i></a></li> -->
+            <!--  <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li> -->
+             <!-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
+             <!-- <li><a href="#" class="icoGoogleplusg" title="Googleplusg"><i class="fa fa-google-plus-g"></i></a></li> -->
+
+             
+            </ul>       
+                
+            </div>
+            <!-- end /.footer-menu -->
+          </div>
+          <!-- Ends: .footer-widget -->
+        </div>
+        <!-- Ends: .col-lg-3 -->
+
+      </div>
+      <!-- end /.row -->
+    </div>
+    <!-- end /.container -->
+  </div>
+  <!-- end /.footer-big -->
+
+  <div class="mini-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-text">
+            <p>Copyrights © 2020 All Rights Reserved by 
+              <a href="#">Digital Innovate Solutions.</a> 
+              
+            </p>
+          </div>
+
+          <!-- <div class="go_top">
+            <span class="icon-arrow-up"></span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End footer------------------ -->
 
 </body>
 </html>
