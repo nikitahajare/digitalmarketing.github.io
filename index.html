@@ -9,8 +9,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-    
+
+
+<style>
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  font-weight:400;
+ font-size:15px;
+}
+
+
 .nav-link{
 width: 100px;
 }
@@ -22,6 +33,7 @@ body {
  font-size:15px
 }
 img{
+
       margin-bottom: -20%;
       /*text-align: right;*/
       /*padding-right: 100px;*/
@@ -423,22 +435,21 @@ $(document).ready(function(){
   <div class="container">
   <div class="row">
   <div class="col-md-6">
-    <h1 class="starttitle">Welcome to Digital <span style="color: #f69323">Marketing World</span></h1>      
+
+
+    <h1 class="ml2" >Welcome to Digital <span style="color: #f69323">Marketing World</span></h1>    
+
     <p id="p1" style="color: white"><b> Want MORE out of your online marketing? You’ve come to the right place. We’ve partnered with hundreds of small, medium, and enterprise businesses to get the results they want through comprehensive, cohesive digital marketing campaigns.</b></p>
   </div>
   <!-- <a href="#">
         <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button>
         <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Explore</button>
       </a> -->
-<style>
-img:hover {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-</style>
+
   <div class="col-md-6" >
-  <img src="images/hero-img2.png" style="padding-top: 35px;">
+  <img class="sticky" src="images/hero-img2.png" style="padding-top: 35px;">
   </div>
+
 </div>
 </div>
 <a href="#">
@@ -447,15 +458,18 @@ img:hover {
       </a>
 </div>
 
+
 <!-- -----------------------------------------------End Jumbotron----------------------------------- -->
 <!-------------------------------------------------- 3 parts---------------------------- -->
 <div class="services">
+<a href="https://practice.geeksforgeeks.org/courses/kid-programming?utm_source=geeksforgeeks&amp;utm_medium=banner&amp;utm_campaign=gfg_rt_kids" target="_blank">
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200929150229/GFG-RT-Kids.png" alt="auto" style="height:600px;">
+</a>
 <div class="container-fluid">
   
   <div class="row">
        <div class="col-sm-2" style="background-color:white">
       <!-- <div class="col-sm-2" style="background-color:yellow;"> -->
-      
       </div> 
     <div class="col-md-8" id="middle3" >
     <h1 id="titledigital">Why We’re The Best <span style="color:#f69323">Digital Marketing Company</span></h1>
@@ -468,12 +482,12 @@ img:hover {
           </p> -->
         </div>
       <div class="col-md-6">
-
-     <img src="images/visionnew2.png"  id="visionimg" alt="vision img">
+	
+     <img src="images/visionnew2.png" alt="vision img" style="height:350px; width:600px">
     </div>
-  </div></div>
+
   <div class="col-sm-2" style="background-color: white;"> 
- 
+
      </div>  
 
   </div> 
