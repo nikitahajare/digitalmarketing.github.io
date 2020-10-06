@@ -1,77 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text" href="css/style.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <style>
-  	img{
-		 width: auto;
-  		height: auto;
-  		/*opacity: 0.5;*/
-	}
-  .nav-link{
-width: 100px;
+    :root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
 }
 
 
-
-body {
- font-family:Rubik,sans-serif;
- position:relative;
- font-weight:400;
- font-size:15px
+.btnsignup{
+  color:white !important;
+  background-color: #f69323;
 }
-/*@media (max-width:991px) {
- .nav-item {
-  padding-left:0;
-  }
+.btnsignup:hover{
+  background-color: #333333;
+}
+
+.card-signup {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-signup .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signup .card-body {
+  padding: 2rem;
+}
+
+.form-signup {
+  width: 100%;
+}
+
+.form-signup .btnsignup {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+/*.form-signup .btnsignin {
+  width: 100%;
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
 }*/
-	.card{
-	position: absolute;
-	margin-top: 25%;
-  /*padding-right: 20px;*/
-	}
-	.card-header{
-		text-align: center;
-	}
-	body{
-		background-color: #ebeeef;
-	}
-  .signupbtn:hover{
-    background-color:  #333333;
-    border-color: #333333!important;
-  }
-  .signupbtn{
-    background-color:#f69323;
 
-  }
-  a.txt1{
-    text-align: right;
-    padding-right: 20%;
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
 
-  }
-  .signupbtn{
-    border-radius: 25px;
-    width: 100px;
-    border-color: #f69323!important;
-  }
-  .loginlink{
-   padding: 0px 100px 0px;
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
 }
 
 
-  	
+
+/* Fallback for Edge
+-------------------------------------------------- */
+
+@supports (-ms-ime-align: auto) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .form-label-group>label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
+  }
+}
   </style>
-  
 </head>
-<body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+<body style="background:#ebeeef" >
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3 fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
     
@@ -80,116 +164,59 @@ body {
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <!-- <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Services</a>
-                <a href="#" class="nav-item nav-link">About</a>
-                <a href="#" class="nav-item nav-link">Contact</a>
-            </div> -->
+           
             <div class="navbar-nav ml-auto">
-               <a class="nav-link" href="index.html" title="Go to Home Page"><strong>Home</strong></a>
-               <a class="nav-link" href="carousel.html" title="See our Gallary"><strong>Gallary</strong></a>
-               <a class="nav-link" href="cardsignup.html" title="Click here to Create New Account"><strong>Sign up</strong></a>
-               <a class="nav-link" href="cardsignin.htm" title="Click here to Login"><strong>Sign in</strong></a>
+               <a class="nav-link" href="index.html"><strong>Home</strong></a>
+               <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
+               <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
+               <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
                 
             </div>
         </div>
     </div>    
 </nav>
-<!-- End nav bar -->
-	<div class="container">
-		<div class="row"> 
-    		<div class="col-sm-3" ></div> 
-    		 <div class="col-md-3" > 
-    			<div class="card" style="width:500px">
-    			<!-- <div class="card-header">Sign in to continue</div> -->
-    			<img class="card-img-top" src="images/signup.PNG" alt="Card image" style="width:100%">
-    			 <!-- <div class="center">Sign In</div> -->
-    			<div class="card-body">
-    				<form >
-              			<script>
-				function myFunction() {
-			    	var x = document.getElementById("fname");
-  				x.value = x.value.toUpperCase();
-				}
-				</script>
-                    <div class="form-group">
-                    <div class="row align-items-center mt-4"  >
-            <div class="col" title="Enter First Name">
-              <input type="text" id="fname" onkeyup="myFunction()" class="form-control" placeholder="First Name">
-            </div>
-				<script>
-				function myFunction1() {
-			    	var x = document.getElementById("dname");
-  				x.value = x.value.toUpperCase();
-				}
-				</script>
-            <div class="col" title="Enter Last Name">
-              <input type="text" id="dname" onkeyup="myFunction1()" class="form-control" placeholder="Last Name">
-            </div>
-          </div>
-        </div>
-          <div class="form-group" title="Enter Valid Email Address">
-                      <!-- <label for="exampleInputEmail1">Email address</label> -->
-                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" required="">
-                        
-                       
-                    </div>
-                    <div class="form-group">
-        <div class="row align-items-center mt-4">
-            <div class="col" title="Enter at Least 8 Digit Password">
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="col" title="Re-Enter Password">
-              <input type="password" class="form-control" placeholder="Confirm Password">
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-      <div class="row align-items-center mt-4">
-            <div class="col" title="Enter Mobile Number">
-              <input type="number" class="form-control" placeholder="Mobile Number">
-            </div>
-          
-            <div class="col">
-              <!-- <input type="text" class="form-control" placeholder="State"> -->
-              <a class="btn btn-light dropdown-toggle" title="Select State"href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Choose State">
-          Choose State
-          </a>
+  <!-- form -->
+  <div class="container">
+    <div class="row" style="margin-top: 100px;">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signup my-5">
+          <img class="card-img-top" src="images/signup.PNG" alt="Card image" style="width:100%">
+          <div class="card-body">
+            
+            <form class="form-signup">
+            
+              
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Email address</label>
+              </div>
 
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="#">Maharashtra</a>
-                <a class="dropdown-item" href="#">Goa</a>
-                <a class="dropdown-item" href="#">Karnataka</a>
-                <a class="dropdown-item" href="#">Gujrat</a>
-                <a class="dropdown-item" href="#">Panjab</a>
-                <a class="dropdown-item" href="#">Delhi</a>
-          </div>
-            </div>
-          </div>
-        </div>
-                    
-                      <a href="#" class="pull-right txt1">
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <label for="inputPassword">Password</label>
+              <!-- </div> -->
+              <!-- <div> -->
+              <!-- <a href="#">
                             
-                            
+                <a href="cardsignup.html" class="pull-right forgotpass"  title="If You Forget Your Password Click Here" style="padding: 20px;">Forgot Password? </a>
                       </a>
-                     </div>
-                   
+                    </div> --></div>
 
-                      <div class="text-center" title="Sign Up">
-                      <button class="btn btn-success signupbtn"  type="button">Sign Up</button>
-                      <!-- <button type="button" class="btn btn-success">Login</button> -->
-              			 </div>
+             <!-- <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+               </div>  <div><a href="#"> -->
+              <button class="btn btn-lg btn-warning btn-block text-uppercase btnsignup" type="Sign up"  >Sign up</button>
+            <!-- </a></div> -->
 
-            		</form>
-    			</div>
-    		</div></div>
-    		<div class="col-sm-3" ></div>
-    		<!-- <div class="col-sm-3">.col-sm-3</div> -->
-  
-    	</div>
-	</div>
-
-
+              
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
