@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Digital Innovate</title>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text" href="css/style.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,17 +12,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-<style>
-
-img.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top:0;
-  font-weight:400;
- font-size:15px;
-}
-
-
+  <style>
+    
 .nav-link{
 width: 100px;
 }
@@ -32,19 +24,23 @@ body {
  font-weight:400;
  font-size:15px
 }
+#heroimg:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 img{
-
       margin-bottom: -20%;
       /*text-align: right;*/
       /*padding-right: 100px;*/
       float: right;
       }
       .jumbotron{
-        background-color: #7F38EC;
-	padding-top: 10px;
+        background-color: #37517e;
+      padding-top: 10px;
       }
      .jumbotron h1{
-        padding-top: 10%;
+        
+        padding-top: 90px;
         font-family: "Nunito", sans-serif;
         color: white;
         font-size: 48px;
@@ -63,27 +59,26 @@ img{
       
       .services{
         margin-top: -100px;
-	 background-color: White;
         /*margin-bottom: 200px;*/
       }
       #middle3{
         /*background-color:#E5E9FF;*/
-        padding-top: 50px;
-        background-color: White;
+        padding-top: 80px;
+        background-color: white;
 
       }
       #visionptag{
 
         font-size: 16px;
-        padding-top: 50px;
+        padding-top: 87px;
         color: #000;
       }
       #visionimg{
-      
+        
         margin-bottom: 20px;
       }
       .services{
-        background-color: white;
+        background-color: #6c757d;
         /*height:500px;*/
       }
       #titledigital{
@@ -104,7 +99,7 @@ img{
       }
       /*------------------services1 css----------------------*/
       .services1{
-        background-color: white !important;
+        background-color: #e5e9ff !important;
       }
       .services1 h1,h2,p{
         text-align: center;
@@ -156,7 +151,7 @@ img{
   margin-bottom: -10px;
 
 }
-
+/*----------------footer---------------*/
 ul {
  padding:0;
  margin:0
@@ -212,7 +207,9 @@ a {
  bottom:80px;
  text-align:center
 }*/
-
+#footer{
+  padding-bottom: 30px;
+}
 /*.go_top span {
  display:inline-block
 }*/
@@ -223,7 +220,7 @@ a {
  margin-bottom:40px
 }
 .footer--light {
- background:#DFE4EA 
+ background:#e7e8ed
 }
 .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
  color:#000000
@@ -253,13 +250,14 @@ a {
  background:#192027;
  text-align:center;
  padding:0;
+ padding-top: 30px;
 }
 .mini-footer p {
  margin:0;
- line-height:2px;
- font-size:12px;
+ line-height:26px;
+ font-size:15px;
  color:#999;
- padding-bottom: 10px;
+ padding-bottom: 30px;
 }
 .mini-footer p a {
  color:#5867dd
@@ -391,8 +389,8 @@ ul.social-network li {
   </style>
   </head>
   <body>
-
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3 fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><span style="color: #f69323">Digital Innovate</span>
     
@@ -401,45 +399,37 @@ ul.social-network li {
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <!-- <div class="navbar-nav">
-                <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Services</a>
-                <a href="#" class="nav-item nav-link">About</a>
-                <a href="#" class="nav-item nav-link">Contact</a>
-            </div> -->
+           
             <div class="navbar-nav ml-auto">
-               <a class="nav-link" href="index.html" title="Go to Home Page"><strong>Home</strong></a>
-               <a class="nav-link" href="carousel.html" title="See our Gallary"><strong>Gallary</strong></a>
-               <a class="nav-link" href="cardsignup.html" title="Click here to Create New Account"><strong>Sign up</strong></a>
-               <a class="nav-link" href="cardsignin.htm" title="Click here to Login"><strong>Sign in</strong></a>
+               <a class="nav-link" href="index.html"><strong>Home</strong></a>
+               <a class="nav-link" href="carousel.html"><strong>Gallary</strong></a>
+               <a class="nav-link" href="cardsignup.html"><strong>Sign up</strong></a>
+               <a class="nav-link" href="cardsignin.htm"><strong>Sign in</strong></a>
                 
             </div>
         </div>
     </div>    
 </nav>
 <!-- End nav bar -->
-<!-- ---------------------------------------Jumbotron------------------------------------------>
+<!-- ---------------------------------------Jumbotron--------------------------->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#p1").css("color", "Black")
+    $("#slideshow").css("color", "black")
       .slideUp(2000)
       .slideDown(2000);
   });
 });
 </script>
-</head>
-  <div class="jumbotron jumbotron-fluid" style="padding-bottom: 200px; margin-bottom:10px;margin-top: -20px;">
+<!--  -->
+  <div class="jumbotron jumbotron-fluid" style="padding-bottom: 200px;    margin-bottom: 10px;margin-top: -20px;">
   <div class="container">
   <div class="row">
   <div class="col-md-6">
-
-
-    <h1 class="ml2" >Welcome to Digital <span style="color: #f69323">Marketing World</span></h1>    
-
-    <p id="p1" style="color: white"><b> Want MORE out of your online marketing? You’ve come to the right place. We’ve partnered with hundreds of small, medium, and enterprise businesses to get the results they want through comprehensive, cohesive digital marketing campaigns.</b></p>
+    <h1 class="starttitle">Welcome to Digital <span style="color: #f69323">Marketing World</span></h1>      
+    <p  id="slideshow"style="color: white">Want MORE out of your online marketing? You’ve come to the right place. We’ve partnered with hundreds of small, medium, and enterprise businesses to get the results they want through comprehensive, cohesive digital marketing campaigns.</p>
   </div>
   <!-- <a href="#">
         <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button>
@@ -447,13 +437,12 @@ $(document).ready(function(){
       </a> -->
 
   <div class="col-md-6" >
-  <img class="sticky" src="images/hero-img2.png" style="padding-top: 35px;">
+  <img id="heroimg"src="images/hero-img2.png" style="padding-top: 110px;">
   </div>
-
 </div>
 </div>
 <a href="#">
-        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;"> Read More </button> -->
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button> -->
         <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;margin-top:30px;margin-bottom: -60px;">Read More</button>
       </a>
 </div>
@@ -462,12 +451,12 @@ $(document).ready(function(){
 <!-- -----------------------------------------------End Jumbotron----------------------------------- -->
 <!-------------------------------------------------- 3 parts---------------------------- -->
 <div class="services">
-
 <div class="container-fluid">
   
   <div class="row">
        <div class="col-sm-2" style="background-color:white">
       <!-- <div class="col-sm-2" style="background-color:yellow;"> -->
+      
       </div> 
     <div class="col-md-8" id="middle3" >
     <h1 id="titledigital">Why We’re The Best <span style="color:#f69323">Digital Marketing Company</span></h1>
@@ -480,52 +469,36 @@ $(document).ready(function(){
           </p> -->
         </div>
       <div class="col-md-6">
-	
-     <img src="images/visionnew2.png" alt="vision img" style="height:350px; width:600px">
+
+     <img src="images/visionnew2.png"  id="visionimg" alt="vision img">
     </div>
-
-  <div class="col-sm-2" style="background-color: white;"> 
-
+  </div></div>
+  <div class="col-sm-2" style="background-color:white"> 
+    <!-- <div class="col-md-2" style="background-color:yellow;">
+      <img src="images/ads.png" alt="ads  image"> --> 
      </div>  
-
   </div> 
-</div>
-
-</div>
+</div></div>
 <!-- ---------------------------------- End 3 parts--------------------------------------------------->
 
 
 
 
 <!-- ---------------------start services1-------------------------------------------- -->
-
-<div class="services1">
-
-<a href="https://practice.geeksforgeeks.org/courses/system-design-live" target="_blank" tabindex="-1">
-<img class="banner-full" src="https://media.geeksforgeeks.org/img-practice/courses/SDL2-10July-Slider-Web.png" style="height:220px; width:1500px"></a>
-
-<div class="container" style="padding-top: 260px;">
+  <div class="services1">
+<div class="container" style="padding-top: 50px;">
   
-     
+  <!-- <div class="row"> -->
+    
     <h1><strong>#1</strong></h1>
     <br>
-    <h2> Digital Marketing <span style="color: #f69323"> Agency For All</span> </h2><br>
-<script>
-$(document).ready(function(){
-  $("p5").click(function(){
-    $(this).hide();
-  });
-});
-</script>
- 
-<p5 >There is a sweet spot in digital marketing: the place where logic meets magic. achieve outcomes Outcomes that will not only help you perform, but outperform your own expectations, the competition, and the market. And grow your business successfully.</p5>
-<br><br><br>
+    <h2> Digital Marketing <span style="color: #f69323"> Agency for All</span> </h2>
+    <p id=service1p>There is a sweet spot in digital marketing: the place where logic meets magic. achieve outcomes Outcomes that will not only help you perform, but outperform your own expectations, the competition, and the market. And grow your business successfully.</p>
+
     <div class="card-deck">
       <!-- -----------------------first service-------------- -->
-
-
-  <div class="card" id="firstcard" style="height:450px; margin-bottom: 60px;border-radius: 25px">
-    <div class="card-body" style="background-color: #478fff">
+  <div class="card" id="firstcard" style="height:480px; margin-bottom: 60px;border-radius: 25px">
+    <div class="card-body" style="background-color: #478FFF">
       
       <div class="icon-block">
               <div class="icon mb-20" >
@@ -536,18 +509,22 @@ $(document).ready(function(){
               </div>
             </div>
 
-<p class="card-text" style="padding-top: 180px; padding-bottom: 20px">Get in touch with us to get an extensive Digital Marketing interview or a free statement today!</p>
+      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">Get in touch with us to get an extensive Digital Marketing interview or a free statement today!</p>
       
- <a href="#"> <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button> -->
-        <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
+      <a href="#">
+        <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center; background-color: transparent;
+    background-image: none; margin-left: 100px;">Read More</button>  -->
+    <button class="btn warning" style="padding: 10px 35px 10px 35px;margin-left: 25%;">Read More</button>
       </a>
     </div>
   </div>
+
+  
 <!-- --------------------------------End first service-------------------------------------------- -->
 
 <!-- start 2nd services------------------------------- -->
-  <div class="card" id="firstcard" style="height:450px; margin-bottom: 60px;border-radius: 25px">
-    <div class="card-body" style="background-color: Black ">
+  <div class="card" id="firstcard" style="height:480px; margin-bottom: 60px;border-radius: 25px">
+    <div class="card-body" style="background-color: #252A2C">
       
       <div class="icon-block">
               <div class="icon mb-20">
@@ -557,7 +534,7 @@ $(document).ready(function(){
               </div>
             </div>
 
-      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">We give out you with the best website plan that turns into a key to achievement of extraordinary arrangements and help </p>
+      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">We give out you with the best website plan that turns into a key to achievement of extraordinary</p>
       
       <a href="#">
         <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center;">Read More</button> -->
@@ -568,8 +545,8 @@ $(document).ready(function(){
 
 <!-- -----------------------end 2nd and start 3rd service------------------------------------- -->
 
-  <div class="card" id="firstcard" style="height:450px; margin-bottom: 60px;border-radius: 25px">
-    <div class="card-body" style="background-color: #20c997!important;">
+  <div class="card" id="firstcard" style="height:480px; margin-bottom: 60px;border-radius: 25px;">
+    <div class="card-body" style="background-color: #1fb398!important; ">
       
       <div class="icon-block">
               <div class="icon mb-20">
@@ -579,7 +556,7 @@ $(document).ready(function(){
               </div>
             </div>
 
-      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">We are the award wining Android App Development Company, based in India, Noida, we PROMOZIE, offer a range</p>
+      <p class="card-text" style="padding-top: 180px; padding-bottom: 20px">We are the award wining Android App Development Company, based in India, Noida, we Digital, </p>
       
       <a href="#">
         <!-- <button class="btn  btn-outline-light btn-sm" style="padding-top:10px;text-align: center; background-color: transparent;
@@ -592,42 +569,48 @@ $(document).ready(function(){
 
 </div>
 
-<div class="allservices">
-<a href="#">
-
-<button class="btn warning" style="padding-top:10px;margin-bottom:70px; background-color: #f69323; background-image: none; margin-left: 500px;padding: 10px 30px 10px 30px;">All Services</button></a></div>
-
+<!-- <a href="#">
+<button class="btn warning allservices" style="margin-left:500px; margin-bottom:70px;background-color:#f69323;padding: 10px 30px 10px 30px;">All Services</button></a> -->
 </div>
+</div>
+
 
 
 <!-- -------------------------------end services----------------------------- -->
 
 <!-- ------------------------------------ Start happy clients---------------------------- -->
-<div class="container-fluid" style="background-color: Black ;padding-bottom: 20px">
-  <h1 style="text-align: center;padding-top: 30px;color:White"><b>Happy <span style="color: #f69323"> Clients</b></span></h1>
-    <div id="carouselContent" class="carousel slide" data-ride="carousel" style="margin-bottom: -100px">
+<div class="container-fluid" style="background-color: #000;padding-bottom: 119px;
+    padding-top: 60px;">
+  <h1 style="text-align: center;padding-top: 8px;
+    padding-bottom: 20px;color:white">Happy <span style="color: #f69323"> Clients</span></h1>
+    <!-- padding-top: 3px;
+    -->
+    <div id="carouselContent" class="carousel slide" data-ride="carousel" style="margin-bottom: -50px">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active text-center p-4">
-                 <p style="size: 35px ;word-spacing:2px; margin-bottom: -40px;  
+                 <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px; padding-bottom: 15px;
 ">Deliverables and reporting are on time. Support is excellent and executives are really humble and TAT received was just 1 hour. Would like to continue.</p>
                  <h3 style="color:red">Mr. Ganesh</h3>
                  <p>CEO (SourcecodeGuru)</p>
             </div>
             <div class="carousel-item text-center p-4">
                 
-                <p style="size: 35px ;word-spacing: 2px; margin-bottom: -40px;"> I want to say thank you to the SEO team who have done an excellent job ranking the Will and Probate Centre at the top of Google.</p>
+                <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px;padding-bottom: 15px;
+"> I want to say thank you to the SEO team who have done an excellent job ranking the Will and Probate Centre at the top of Google.</p>
                  <h3 style="color:red">Mr. Rahul Jagtap</h3>
                  <p>Marketing Manager (BrahmaCorp)</p>
             </div>
             <div class="carousel-item text-center p-4">
                 
-                <p style="size: 35px ;word-spacing: 2px; margin-bottom: -40px;"> Working with this company since last 1 year for all types of Digital campaigns & really praise them for good job which helped us sell properties worth millions.</p>
+                <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px;padding-bottom: 15px;
+"> Working with this company since last one year for all types of Digital campaigns and really praise them for good job which helped us sell properties worth millions.</p>
                  <h3 style="color:red">Mr. Pushkar</h3>
                  <p>Marketing Head (Phoenix Group)</p>
             </div>
             <div class="carousel-item text-center p-4">
                 
-                <p style="size: 35px ;word-spacing: 2px; margin-bottom: -40px;"> I want to say thank you to the SEO team who have done an excellent job ranking the Will and Probate Centre at the top of Google.</p>
+                <p style="size: 35px ;word-spacing: 3px; margin-bottom: -10px;padding-bottom: 15px;
+"> I want to say thank you to the SEO team who have done an excellent job ranking the Will and Probate Centre at the top of Google.</p>
                  <h3 style="color:red">Mr. Rahul Jagtap</h3>
                  <p>Marketing Manager (BrahmaCorp)</p>
             </div>
@@ -647,19 +630,20 @@ $(document).ready(function(){
 
 <!-- --------------------start footer--------------------- -->
 <footer class="footer-area footer--light" >
-  <div class="footer">
+  <div class="footer" id="footer">
     <!-- start .container -->
-    <div class="container" style="padding-top: 80px;">
+    <div class="container" style="padding-top: 100px;">
       <div class="row">
         <div class="col-md-3 col-sm-12">
           <div class="footer-widget">
             
             <div class="widget-about" style="font-size: 25px;
     padding-left: 0px;">
-              <span style="color: #f69323;padding-left: 0px;">Digital Innovate</span>
+              <span style="color: #f69323;padding-left: 20px;">Digital Innovate</span>
               
-              <p style="color: black">Digital Innovate Solutions is Pune's premier full-service digital marketing company.</p>
+              <!-- <img src="http://placehold.it/250x80" alt="" class="img-fluid" style="margin-top: 20px"> -->
 
+              <p style="color: black">Digital Innovate Solutions is Pune's premier full-service digital marketing company.</p>
               <!-- <ul class="contact-details">
                 <li>
                   <span class="icon-earphones"></span> Call Us:
@@ -682,16 +666,16 @@ $(document).ready(function(){
               <ul>
                 
                 <li>
-                  <a href="index.html" title="Go to Home Page">Home</a>
+                  <a href="index.html">Home</a>
                 </li>
                 <li>
-                  <a href="carousel.html" title="Go to Gallary Page">Gallary</a>
+                  <a href="carousel.html">Gallary</a>
                 </li>
                 <li>
-                  <a href="cardsignup.html" title="Go to Signup Page">Sign up</a>
+                  <a href="cardsignup.html">Sign up</a>
                 </li>
                 <li>
-                  <a href="cardsignin.htm" title="Go to Login Page">Sign in</a>
+                  <a href="cardsignin.htm">Sign in</a>
                 </li>
               </ul>
             </div>
@@ -733,19 +717,16 @@ $(document).ready(function(){
                 <!-- Get connected with us on social networks! -->
               </h4>
               <!-- <ul> Help Support-->
-                <small><span>Mon-sat 9.30am-6.30pm</span></small>
+                <span>Mon-Sat 9.30am-6.30pm</span>
                 <p style="padding-bottom: 0px;
-    padding-top: 0px;padding-right: 110px; color:black">+917744088287</p>
-                <small><span>online support</span></small>
+    padding-top: 0px;padding-right: 110px; color:black">+91 7744088287</p>
+                <span>online support</span>
                     <p style="padding-bottom: 0px;
     padding-top: 0px;padding-right: 110px;"><a href="mailto:info@digitalinnovate.com">info@digitalinnovate.com</a></p>
                 <ul class="social-network social-circle">
              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-             <!-- <li><a href="#" class="icoInstagram" title="Linkedin"><i class="fa fa-instagram"></i></a></li> -->
-            <!--  <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li> -->
-             <!-- <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
-             <!-- <li><a href="#" class="icoGoogleplusg" title="Googleplusg"><i class="fa fa-google-plus-g"></i></a></li> -->
+             
 
              
             </ul>       
